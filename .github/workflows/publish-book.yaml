@@ -14,6 +14,8 @@ jobs:
     secrets:
       EARTHDATA_USERNAME: ${{ secrets.EARTHDATA_USERNAME }}
       EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
+    with:
+      environment_variables: "EARTHDATA_USERNAME EARTHDATA_PASSWORD"
 
   deploy:
     needs: build
