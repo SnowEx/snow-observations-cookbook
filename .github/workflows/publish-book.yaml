@@ -12,8 +12,8 @@ jobs:
     uses: ProjectPythia/cookbook-actions/.github/workflows/build-book.yaml@main
     # be sure to add repository secrets accordingly
     secrets:
-      EARTHDATA_USERNAME: ${{ secrets.EARTHDATA_USER }}
-      EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASS }}
+      EARTHDATA_USERNAME: ${{ secrets.EARTHDATA_USERNAME }}
+      EARTHDATA_PASSWORD: ${{ secrets.EARTHDATA_PASSWORD }}
 
   deploy:
     needs: build
