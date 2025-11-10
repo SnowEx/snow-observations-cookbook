@@ -115,7 +115,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "airborne_ir = rioxarray.open_rasterio('SNOWEX2020_IR_PLANE_2020Feb08_mosaicked_2020-02-08T181915.tif')"
+    "# airborne_ir = rioxarray.open_rasterio('SNOWEX2020_IR_PLANE_2020Feb08_mosaicked_2020-02-08T181915.tif')"
    ]
   },
   {
@@ -283,7 +283,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "airborne_vis = rioxarray.open_rasterio('SNOWEX2020_EO_PLANE_2020Feb08_mosaicked_2020-02-08T181915.tif')\n",
+    "# airborne_vis = rioxarray.open_rasterio('SNOWEX2020_EO_PLANE_2020Feb08_mosaicked_2020-02-08T181915.tif')\n",
     "\n",
     "# note that the filename is identical with the same timestamp, but is labeled \"EO\" (electro-optical) rather than \"IR\" (infrared)"
    ]
@@ -615,8 +615,8 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "df = pd.read_csv(f'{TUTORIAL_DATA}/SNEX20_VPTS_Raw/Level-0/snow-temperature-timeseries/CR10X_GM1_final_storage_1.dat',\n",
-    "                 header = None, names = column_headers) \n",
+    "# df = pd.read_csv(f'{TUTORIAL_DATA}/SNEX20_VPTS_Raw/Level-0/snow-temperature-timeseries/CR10X_GM1_final_storage_1.dat',\n",
+    "#                 header = None, names = column_headers) \n",
     "\n",
     "# After the filepath we specify header=None because the file doesn't contain column headers, \n",
     "# then we specify names=column_headers to give our own names for each column."
@@ -1134,7 +1134,7 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "aster_ir = xr.open_rasterio(f'{TUTORIAL_DATA}/AST_L1T_00302082020180748_20200209065849_17218_ImageData14.tif')"
+    "# aster_ir = xr.open_rasterio(f'{TUTORIAL_DATA}/AST_L1T_00302082020180748_20200209065849_17218_ImageData14.tif')"
    ]
   },
   {
@@ -2055,16 +2055,16 @@
    "metadata": {},
    "outputs": [],
    "source": [
-    "%%bash \n",
+    "# %%bash \n",
     "\n",
-    "# Retrieve a copy of data files used in this tutorial from Zenodo.org:\n",
-    "# Re-running this cell will not re-download things if they already exist\n",
+    "# # Retrieve a copy of data files used in this tutorial from Zenodo.org:\n",
+    "# # Re-running this cell will not re-download things if they already exist\n",
     "\n",
-    "mkdir -p /tmp/tutorial-data\n",
-    "cd /tmp/tutorial-data\n",
-    "wget -q -nc -O data.zip https://zenodo.org/record/5504396/files/thermal-ir.zip\n",
-    "unzip -q -n data.zip\n",
-    "rm data.zip"
+    "# mkdir -p /tmp/tutorial-data\n",
+    "# cd /tmp/tutorial-data\n",
+    "# wget -q -nc -O data.zip https://zenodo.org/record/5504396/files/thermal-ir.zip\n",
+    "# unzip -q -n data.zip\n",
+    "# rm data.zip"
    ]
   },
   {
@@ -2095,8 +2095,8 @@
    "outputs": [],
    "source": [
     "# Open airborne TIR mosaic NetCDF file\n",
-    "ds = xr.open_dataset('/tmp/tutorial-data/thermal-ir/SNOWEX2020_IR_PLANE_2020Feb08_mosaicked_APLUW.nc',\n",
-    "                     decode_times=False) # set decode_times to False"
+    "# ds = xr.open_dataset('/tmp/tutorial-data/thermal-ir/SNOWEX2020_IR_PLANE_2020Feb08_mosaicked_APLUW.nc',\n",
+    "#                     decode_times=False) # set decode_times to False"
    ]
   },
   {
