@@ -24,7 +24,7 @@ project:
           - file: notebooks/timelapse-camera-tutorial.ipynb
           - file: notebooks/uavsar-tutorial.ipynb
           - file: notebooks/microstructure-tutorial.ipynb
-          - file: notebooks/aviris-ng-data.ipynb     
+          - file: notebooks/aviris-ng-tutorial.ipynb     
           - file: notebooks/tls_data_access.ipynb
           - file: notebooks/is2_snow_depth_workflow.ipynb
           - file: notebooks/snotel_data_access.ipynb
