@@ -24,6 +24,8 @@ dependencies:
   - pip 
   - contextily
   - h5netcdf
+  - spectral
   - pip:
     - uavsar_pytools>=0.7.1, <0.8
     - snowmicropyn
+    - metloom
