@@ -1,4 +1,4 @@
-# (Replace_with_your_title) Cookbook
+# Snow Observations Cookbook
 
 <img src="thumbnails/thumbnail.png" alt="thumbnail" width="300"/>
 
@@ -6,47 +6,74 @@
 [![Binder](https://binder.projectpythia.org/badge_logo.svg)](https://binder.projectpythia.org/v2/gh/ProjectPythia/cookbook-template/main?labpath=notebooks)
 [![DOI](https://zenodo.org/badge/475509405.svg)](https://zenodo.org/badge/latestdoi/475509405)
 
-_See the [Cookbook Contributor's Guide](https://projectpythia.org/cookbook-guide) for step-by-step instructions on how to create your new Cookbook and get it hosted on the [Pythia Cookbook Gallery](https://cookbooks.projectpythia.org)!_
 
-This Project Pythia Cookbook covers ... (replace `...` with the main subject of your cookbook ... e.g., _working with radar data in Python_)
+This Project Pythia Cookbook is a compilation of tutorials and training 
+materials in support of the NASA snow reserach community. Some tutorials
+come from the 2020 to 2024 SnowEx Hackweek program hosted at the UW eScience 
+Institute. Other materials are drawn from the NASA Goddard "SnowPit" Science
+Task Group or STG. The purpose of the tutorials is to help people with data 
+access and to demonstrate a variety of disciplinary use cases.
 
 ## Motivation
 
-(Add a few sentences stating why this cookbook will be useful. What skills will you, "the chef", gain once you have reached the end of the cookbook?)
+There are numerous data products and methods for accessing and analyzing 
+snow observations. These include field, airborne, and satellite missions.
+The goal of these tutorials is to streamline data access, reduce duplication 
+of effort and build an open science community around snow research 
+datasets, algorithms and software.
 
 ## Authors
 
-[First Author](https://github.com/first-author1), [Second Author](https://github.com/second-author2), etc. _Acknowledge primary content authors here_
+[Zach Fair](@zachghiaccio)
+[Anthony Arendt](@aaarendt),
+[Mark Welden-Smith](@markweldensmith)
+
+more to be added
 
 ### Contributors
 
-<a href="https://github.com/ProjectPythia/cookbook-template/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=ProjectPythia/cookbook-template" />
+<a href="https://github.com/SnowEx/snow-cookbook/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SnowEx/snow-cookbook" />
 </a>
 
 ## Structure
 
-(State one or more sections that will comprise the notebook. E.g., _This cookbook is broken up into two main sections - "Foundations" and "Example Workflows."_ Then, describe each section below.)
+This cookbook is broken up into three main sections: "Data Access", "Observations", and "Analysis and Machine Learning". The current listing of subtopics is currently a work in progress.
 
-### Section 1 ( Replace with the title of this section, e.g. "Foundations" )
+### Section 1: Data Access
 
-(Add content for this section, e.g., "The foundational content includes ... ")
+* Field Campaigns Overview
+* SnowExSQL Database
 
-### Section 2 ( Replace with the title of this section, e.g. "Example workflows" )
+### Section 2: Observations
 
-(Add content for this section, e.g., "Example workflows include ... ")
+* GPR and Lidar
+* Time-lapse Cameras
+* UAVSAR
+* Microstructure
+* AVIRIS-NG
+* Terrestrial Laser Scanning
+
+### Section 3: Analysis and Machine Learning
+
+* Neural Networks with PyTorch
+* Snow Modeling
+* UCLA Reanalysis
+* MERRA-2
+* ERA5
 
 ## Running the Notebooks
 
-You can either run the notebook using [Binder](https://binder.projectpythia.org/) or on your local machine.
+You can either run the notebook using 
+[Binder](https://binder.projectpythia.org/) or on your local machine.
 
 ### Running on Binder
 
 The simplest way to interact with a Jupyter Notebook is through
 [Binder](https://binder.projectpythia.org/), which enables the execution of a
-[Jupyter Book](https://jupyterbook.org) in the cloud. The details of how this works are not
-important for now. All you need to know is how to launch a Pythia
-Cookbooks chapter via Binder. Simply navigate your mouse to
+[Jupyter Book](https://jupyterbook.org) in the cloud. The details of 
+how this works are not important for now. All you need to know is how to launch 
+a Pythia Cookbooks chapter via Binder. Simply navigate your mouse to
 the top right corner of the book chapter you are viewing and click
 on the rocket ship icon, (see figure below), and be sure to select
 “launch Binder”. After a moment you should be presented with a
@@ -55,7 +82,7 @@ and even change the example programs. You’ll see that the code cells
 have no output at first, until you execute them by pressing
 {kbd}`Shift`\+{kbd}`Enter`. Complete details on how to interact with
 a live Jupyter notebook are described in [Getting Started with
-Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter).
+Jupyter](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html).
 
 Note, not all Cookbook chapters are executable. If you do not see
 the rocket ship icon, such as on this page, you are not viewing an
@@ -64,24 +91,24 @@ executable book chapter.
 
 ### Running on Your Own Machine
 
-If you are interested in running this material locally on your computer, you will need to follow this workflow:
+If you are interested in running this material locally on your computer, 
+you will need to follow this workflow:
 
-(Replace "cookbook-example" with the title of your cookbooks)
 
-1. Clone the `https://github.com/ProjectPythia/cookbook-example` repository:
+1. Clone the `https://github.com/ProjectPythia/snow-cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/cookbook-example.git
+    git clone https://github.com/ProjectPythia/snow-cookbook.git
    ```
 
-1. Move into the `cookbook-example` directory
+1. Move into the `snow-cookbook` directory
    ```bash
-   cd cookbook-example
+   cd snow-cookbook
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate cookbook-example
+   conda activate snow-cookbook
    ```
 1. Move into the `notebooks` directory and start up Jupyterlab
    ```bash

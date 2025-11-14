@@ -3,19 +3,29 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
-  title: Project Pythia Cookbook Template
-  github: https://github.com/projectpythia/cookbook-template
+  title: Snow Cookbook
+  github: https://github.com/SnowEx/snow-cookbook
   authors:
-    - name: The Project Pythia Community
-  copyright: '2024'
+    - name: The SnowPit Community
+  copyright: '2025'
   toc:
     - file: README.md
     - title: Preamble
       children:
         - file: notebooks/how-to-cite.md
-    - title: Introduction
+    - title: Data Access
       children:
-        - file: notebooks/notebook-template.ipynb
-  jupyter:
-      binder:
-        repo: projectpythia/cookbook-template
+        - file: notebooks/snowex_data_overview.ipynb
+        - file: notebooks/snowexsql_database.ipynb
+    - title: Observations
+      children:
+          - file: notebooks/GPR_Lidar_HackweekTutorial.ipynb
+          - file: notebooks/thermal-ir-tutorial.ipynb
+          - file: notebooks/timelapse-camera-tutorial.ipynb
+          - file: notebooks/uavsar-tutorial.ipynb
+          - file: notebooks/microstructure-tutorial.ipynb
+          - file: notebooks/aviris-ng-tutorial.ipynb     
+          - file: notebooks/tls_data_access.ipynb
+          - file: notebooks/is2_snow_depth_workflow.ipynb
+          - file: notebooks/snotel_data_access.ipynb
+          - file: notebooks/snow-pit_data_access.ipynb

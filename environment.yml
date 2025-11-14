@@ -1,7 +1,31 @@
-name: cookbook-dev
+name: snow-observations-cookbook-test
 channels:
   - conda-forge
 dependencies:
   - jupyterlab
   - mystmd
   - jupyterlab-myst
+  - snowexsql >=0.5.0,<0.6
+  - numpy
+  - scipy
+  - matplotlib
+  - rasterio
+  - geopandas
+  - xarray
+  - pandas
+  - shapely
+  - rioxarray
+  - earthaccess
+  - seaborn
+  - holoviews
+  - bokeh
+  - datashader
+  - earthpy
+  - pip 
+  - contextily
+  - h5netcdf
+  - spectral
+  - pip:
+    - uavsar_pytools>=0.7.1, <0.8
+    - snowmicropyn
+    - metloom
