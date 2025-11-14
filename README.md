@@ -26,19 +26,19 @@ datasets, algorithms and software.
 
 [Zach Fair](@zachghiaccio)
 [Anthony Arendt](@aaarendt),
-[Mark Welden-Smith](@markweldensmith)
-
-more to be added
+[Alex Lewandowski](@Alex-Lewandowski),
+[Joachim Meyer](@jomey)
 
 ### Contributors
 
 <a href="https://github.com/SnowEx/snow-cookbook/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SnowEx/snow-cookbook" />
+  <img src="https://contrib.rocks/image?repo=SnowEx/snow-observations-cookbook" />
 </a>
 
 ## Structure
 
-This cookbook is broken up into three main sections: "Data Access", "Observations", and "Analysis and Machine Learning". The current listing of subtopics is currently a work in progress.
+This cookbook is broken up into two main sections: "Data Access" and 
+"Observations". 
 
 ### Section 1: Data Access
 
@@ -53,14 +53,6 @@ This cookbook is broken up into three main sections: "Data Access", "Observation
 * Microstructure
 * AVIRIS-NG
 * Terrestrial Laser Scanning
-
-### Section 3: Analysis and Machine Learning
-
-* Neural Networks with PyTorch
-* Snow Modeling
-* UCLA Reanalysis
-* MERRA-2
-* ERA5
 
 ## Running the Notebooks
 
@@ -98,17 +90,17 @@ you will need to follow this workflow:
 1. Clone the `https://github.com/ProjectPythia/snow-cookbook` repository:
 
    ```bash
-    git clone https://github.com/ProjectPythia/snow-cookbook.git
+    git clone https://github.com/ProjectPythia/snow-observations-cookbook.git
    ```
 
-1. Move into the `snow-cookbook` directory
+1. Move into the `snow-observations-cookbook` directory
    ```bash
-   cd snow-cookbook
+   cd snow-observations-cookbook
    ```
 1. Create and activate your conda environment from the `environment.yml` file
    ```bash
    conda env create -f environment.yml
-   conda activate snow-cookbook
+   conda activate snow-observations-cookbook
    ```
 1. Move into the `notebooks` directory and start up Jupyterlab
    ```bash

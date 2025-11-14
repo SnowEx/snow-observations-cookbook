@@ -3,10 +3,10 @@ version: 1
 extends:
   - https://raw.githubusercontent.com/projectpythia/pythia-config/main/pythia.yml
 project:
-  title: Snow Cookbook
-  github: https://github.com/SnowEx/snow-cookbook
+  title: Snow Observations Cookbook
+  github: https://github.com/SnowEx/snow-observations-cookbook
   authors:
-    - name: The SnowPit Community
+    - name: The NASA Snow Observations Community
   copyright: '2025'
   toc:
     - file: README.md
@@ -26,6 +26,5 @@ project:
           - file: notebooks/microstructure-tutorial.ipynb
           - file: notebooks/aviris-ng-tutorial.ipynb     
           - file: notebooks/tls_data_access.ipynb
-          - file: notebooks/is2_snow_depth_workflow.ipynb
           - file: notebooks/snotel_data_access.ipynb
-          - file: notebooks/snow-pit_data_access.ipynb
+
